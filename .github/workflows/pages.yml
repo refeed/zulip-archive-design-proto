@@ -33,6 +33,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Generate static htmls
+        env:
+          BASE_URL: "https://refeed.github.io/zulip-archive-design-proto"
         run: |
           mkdir rendered
           pip install Jinja2==3.0.3
