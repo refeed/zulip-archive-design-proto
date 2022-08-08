@@ -1,0 +1,16 @@
+name: Linting
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint 
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      - run: |
+          pip install djlint==1.9.4
+          djlint . --extension=html.jinja2 --lint --indent=2 --ignore=H005,H006,H030,H031
