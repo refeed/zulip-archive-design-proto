@@ -1,34 +1,30 @@
 <!DOCTYPE HTML>
 <html>
-
-<head>
-  <title>Lorem Ipsum Community Zulip Archive</title>
-
-  <link rel="stylesheet" href="https://use.typekit.net/fte6dua.css">
-  <link rel="stylesheet" href="{{ base_url }}/assets/pygments.css">
-  <link rel="stylesheet" href="{{ base_url }}/assets/style.css">
-</head>
-
-<body>
-  <div class="header">
-    <div class="header-main">
-      <div class="header-left"> 
-        <a class="homepage-logo-link" href="{{ base_url }}">
-          <img class="zulip-logo" src="{{ base_url }}/assets/zulip_logo.svg">
-          <span class="zulip-archive-brand">archive</span>
-        </a>
-        <span class="archive-title">Lorem Ipsum community</span>
-      </div>
-      <div class="header-right">
-        <span>Archived on August 17th 2022 at 11.00 AM UTC</span>
+  <head>
+    <title>Lorem Ipsum Community Zulip Archive</title>
+    <link rel="stylesheet" href="https://use.typekit.net/fte6dua.css"/>
+    <link rel="stylesheet" href="{{ base_url }}/assets/pygments.css"/>
+    <link rel="stylesheet" href="{{ base_url }}/assets/style.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-main">
+        <div class="header-left">
+          <a class="homepage-logo-link" href="{{ base_url }}">
+            <img class="zulip-logo"
+                 alt="Zulip logo"
+                 src="{{ base_url }}/assets/zulip_logo.svg"/>
+            <span class="zulip-archive-brand">archive</span>
+          </a>
+          <span class="archive-title">Lorem Ipsum community</span>
+        </div>
+        <div class="header-right">
+          <span>Archived on August 17th 2022 at 11.00 AM UTC</span>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="content-wrapper">
-    {% block content %}{% endblock %}
-  </div>
-
-</body>
-
+    <div class="content-wrapper">
+      {% block content %}{% endblock %}
+    </div>
+  </body>
 </html>

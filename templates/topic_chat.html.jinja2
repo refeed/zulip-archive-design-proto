@@ -1,31 +1,39 @@
 {% extends "base.html.jinja2" %}
-
 {% block content %}
-<div class="page-info">
-  <div class="content-header-small-xlight">STREAM</div>
-  <div class="content-header-medium-light"><a href="{{ base_url }}/stream.html">lorem ipsum</a></div>
-  <div class="content-header-small-xlight">TOPIC</div>
-  <div class="topic-title">Le fishe swimming in a bathtub <span class="topic-title-number-messages">(2 messages)</span></div>
-</div>
-
-<hr>
-
-<div class="chat-item">
-  <div class="chat-header"><b>Rafid Aslam</b> <span class="chat-header-unfocused">(<a class="chat-permalink" href="#">Jun 26 2022 at 06:47</a>): (<a class="view-in-zulip-link" href="#">View in Zulip ↗</a>)</span></div>
-  <div class="rendered-markdown">
-    <p>Say I write something like</p>
-    <div class="codehilite" data-code-language="Julia console"><pre><span></span><code><span class="gp">julia&gt;</span><span class="w"> </span><span class="k">ccall</span><span class="p">(</span><span class="ss">:printf</span><span class="p">,</span><span class="w"> </span><span class="kt">Int</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">Cstring</span><span class="p">,),</span><span class="w"> </span><span class="s">"hello there!</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span><span class="w"></span>
+  <div class="page-info">
+    <div class="content-header-small-xlight">STREAM</div>
+    <div class="content-header-medium-light">
+      <a href="{{ base_url }}/stream.html">lorem ipsum</a>
+    </div>
+    <div class="content-header-small-xlight">TOPIC</div>
+    <div class="topic-title">
+      Le fishe swimming in a bathtub <span class="topic-title-number-messages">(2 messages)</span>
+    </div>
+  </div>
+  <hr/>
+  <div class="chat-item">
+    <div class="chat-header">
+      <b>Rafid Aslam</b> <span class="chat-header-unfocused">(<a class="chat-permalink" href="#">Jun 26 2022 at 06:47</a>): (<a class="view-in-zulip-link" href="#">View in Zulip ↗</a>)</span>
+    </div>
+    <div class="rendered-markdown">
+      <p>Say I write something like</p>
+      <div class="codehilite" data-code-language="Julia console">
+        <pre><span></span><code><span class="gp">julia&gt;</span><span class="w"></span><span class="k">ccall</span><span class="p">(</span><span class="ss">:printf</span><span class="p">,</span><span class="w"></span><span class="kt">Int</span><span class="p">,</span><span class="w"></span><span class="p">(</span><span class="kt">Cstring</span><span class="p">,),</span><span class="w"></span><span class="s">"hello there!</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span><span class="w"></span>
     <span class="go">hello there!</span>
     <span class="go">13</span>
-    </code></pre></div>
-    <p>i,e,. without explicitly specifying a path to a library… what determines the default set of paths Julia will search for the <code>printf </code>function?</p>
+    </code></pre>
+      </div>
+      <p>
+        i,e,. without explicitly specifying a path to a library… what determines the default set of paths Julia will search for the <code>printf </code>function?
+      </p>
+    </div>
   </div>
-</div>
-
-<div class="chat-item">
-  <div class="chat-header"><b>Rafid Aslam</b> <span class="chat-header-unfocused">(<a class="chat-permalink" href="#">Jun 26 2022 at 06:47</a>): (<a class="view-in-zulip-link" href="#">View in Zulip ↗</a>)</span></div>
-  <p class="chat-body">
-    The algorithms solution to Scheme is defined not only by the study of multicast heuristics, but also by the natural need for SMPs. A natural problem in robotics is the visualization of courseware. To put this in perspective, consider the fact that infamous information theorists usually use e-commerce to fix this grand challenge. The exploration of robots would improbably improve concurrent symmetries.
-  </p>
-</div>
+  <div class="chat-item">
+    <div class="chat-header">
+      <b>Rafid Aslam</b> <span class="chat-header-unfocused">(<a class="chat-permalink" href="#">Jun 26 2022 at 06:47</a>): (<a class="view-in-zulip-link" href="#">View in Zulip ↗</a>)</span>
+    </div>
+    <p class="chat-body">
+      The algorithms solution to Scheme is defined not only by the study of multicast heuristics, but also by the natural need for SMPs. A natural problem in robotics is the visualization of courseware. To put this in perspective, consider the fact that infamous information theorists usually use e-commerce to fix this grand challenge. The exploration of robots would improbably improve concurrent symmetries.
+    </p>
+  </div>
 {% endblock %}
