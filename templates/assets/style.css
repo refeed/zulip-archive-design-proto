@@ -1,0 +1,143 @@
+.header {
+  background-color: #5991ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  left: 0;
+}
+
+body {
+  font-family: source-sans-3, sans-serif;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #333;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-main {
+  padding: 15px 20px;
+  height: 29px;
+}
+
+.header-right {
+  float: right;
+  text-align: right;
+}
+
+.archive-title {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.zulip-archive-brand {
+  margin-left: 2px;
+  font-weight: 200;
+}
+
+.zulip-logo {
+  vertical-align: top;
+  height: 25px;
+}
+
+.homepage-logo-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content-wrapper {
+  margin: 115px 80px;
+}
+
+.content-header-light {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 34px;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px inset #828282;
+}
+
+th {
+  background-color: #e5e5e5;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+a {
+  color: #333;
+}
+
+.content-header-small-xlight {
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #6c757d;
+}
+
+.content-header-medium-light {
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.topic-title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-botom: 22px;
+}
+
+.topic-title-number-messages {
+  font-weight: 200;
+  color: #6c757d;
+}
+
+.page-info {
+  margin-bottom: 42px;
+}
+
+hr {
+  border-top: 0px solid #6c757d;
+}
+
+.chat-header-unfocused {
+  color: #6c757d;
+}
+
+.chat-item {
+  margin-top: 33px;
+}
+
+.chat-body {
+  margin-top: 7px;
+}
+
+div.rendered-markdown > p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+a.chat-permalink {
+  color: #6c757d;
+}
+
+a.view-in-zulip-link {
+  color: #0a95ff;
+}

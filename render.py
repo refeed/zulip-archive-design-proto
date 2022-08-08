@@ -18,4 +18,4 @@ with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
 
 
 # Copy needed assets to /rendered
-shutil.copyfile("pygments.css", "rendered/pygments.css")
+shutil.copytree("templates/assets", "rendered/assets", dirs_exist_ok=True)
