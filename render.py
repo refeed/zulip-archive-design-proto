@@ -6,7 +6,7 @@ from jinja2 import Environment, FileSystemLoader
 BASE_URL = os.getenv("BASE_URL", "")
 INSTANCE_TITLE = "Lorem Ipsum Community Archive"
 
-environment = Environment(loader=FileSystemLoader("templates"))
+environment = Environment(loader=FileSystemLoader("templates"), autoescape=True)
 stream_list_template = environment.get_template("stream_list.html.jinja2")
 topic_list_template = environment.get_template("topic_list.html.jinja2")
 topic_chat_template = environment.get_template("topic_chat.html.jinja2")

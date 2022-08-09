@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>{{ page_title | e }}</title>
+    <title>{{ page_title }}</title>
     <link rel="stylesheet" href="https://use.typekit.net/fte6dua.css"/>
     <link rel="stylesheet" href="{{ base_url }}/assets/pygments.css"/>
     <link rel="stylesheet" href="{{ base_url }}/assets/style.css"/>
@@ -16,10 +16,10 @@
                  src="{{ base_url }}/assets/zulip_logo.svg"/>
             <span class="zulip-archive-brand">archive</span>
           </a>
-          <span class="archive-title">{{ title | e }}</span>
+          <span class="archive-title">{{ title }}</span>
         </div>
         <div class="header-right">
-          <span>{{ last_updated_str | e }}</span>
+          <span>{{ last_updated_str }}</span>
         </div>
       </div>
     </div>
