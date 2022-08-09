@@ -15,7 +15,10 @@ topic_chat_template = environment.get_template("topic_chat.html.jinja2")
 with open("./rendered/index.html", mode="w+", encoding="utf-8") as f:
     f.write(
         stream_list_template.render(
-            base_url=BASE_URL, page_title=INSTANCE_TITLE, title=INSTANCE_TITLE
+            base_url=BASE_URL,
+            page_title=INSTANCE_TITLE,
+            title=INSTANCE_TITLE,
+            last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
         )
     )
 with open("./rendered/stream.html", mode="w+", encoding="utf-8") as f:
@@ -24,6 +27,7 @@ with open("./rendered/stream.html", mode="w+", encoding="utf-8") as f:
             base_url=BASE_URL,
             page_title=f"# lorem ipsum | {INSTANCE_TITLE}",
             title=INSTANCE_TITLE,
+            last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
         )
     )
 with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
@@ -32,6 +36,7 @@ with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
             base_url=BASE_URL,
             page_title=f"Le fishe swimming in a bathtub - # lorem ipsum | {INSTANCE_TITLE}",
             title=INSTANCE_TITLE,
+            last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
         )
     )
 
