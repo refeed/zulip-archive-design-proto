@@ -123,6 +123,8 @@ hr {
 
 .chat-item {
   margin-top: 33px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 25px;
 }
 
 .chat-body {
