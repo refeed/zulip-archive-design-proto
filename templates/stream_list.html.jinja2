@@ -8,16 +8,15 @@
       <th># of messages</th>
       <th>Latest message date</th>
     </tr>
-
     {% for stream in stream_list  %}
-    <tr>
-      <td>
-        <a href="{{ stream.url }}">{{ stream.stream_name }}</a>
-      </td>
-      <td>{{ stream.num_topics }}</td>
-      <td>{{ stream.num_messages }}</td>
-      <td>{{ stream.last_date }}</td>
-    </tr>
+      <tr>
+        <td>
+          <a href="{{ stream.url }}">{{ stream.stream_name }}</a>
+        </td>
+        <td>{{ stream.num_topics }}</td>
+        <td>{{ stream.num_messages }}</td>
+        <td>{{ stream.last_date }}</td>
+      </tr>
     {% endfor %}
   </table>
 {% endblock %}

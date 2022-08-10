@@ -12,13 +12,11 @@
   </div>
   <hr/>
   {% for chat in chat_list %}
-  <div class="chat-item">
-    <div class="chat-header">
-      <b>{{ chat.user_name }}</b> <span class="chat-header-unfocused">(<a class="chat-permalink" href="#{{msg_id}}">{{ chat.date }}</a>): (<a class="view-in-zulip-link" href="{{ chat.zulip_link }}">View in Zulip ↗</a>)</span>
+    <div class="chat-item">
+      <div class="chat-header">
+        <b>{{ chat.user_name }}</b> <span class="chat-header-unfocused">(<a class="chat-permalink" href="#{{ msg_id }}">{{ chat.date }}</a>): (<a class="view-in-zulip-link" href="{{ chat.zulip_link }}">View in Zulip ↗</a>)</span>
+      </div>
+      <div class="rendered_markdown">{{ chat.msg_content_html | safe }}</div>
     </div>
-    <div class="rendered_markdown">
-      {{ chat.msg_content_html | safe }}
-    </div>
-  </div>
   {% endfor %}
 {% endblock %}

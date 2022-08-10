@@ -13,13 +13,13 @@
       <th>Latest message date</th>
     </tr>
     {% for topic in topic_list  %}
-    <tr>
-      <td>
-        <a href="{{ base_url }}/topic.html">{{ topic.topic_name }}</a>
-      </td>
-      <td>{{ topic.num_messages }}</td>
-      <td>{{ topic.last_date }}</td>
-    </tr>
+      <tr>
+        <td>
+          <a href="{{ base_url }}/topic.html">{{ topic.topic_name }}</a>
+        </td>
+        <td>{{ topic.num_messages }}</td>
+        <td>{{ topic.last_date }}</td>
+      </tr>
     {% endfor %}
   </table>
 {% endblock %}
