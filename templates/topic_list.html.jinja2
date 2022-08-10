@@ -12,12 +12,14 @@
       <th># of messages</th>
       <th>Latest message date</th>
     </tr>
+    {% for topic in topic_list  %}
     <tr>
       <td>
-        <a href="{{ base_url }}/topic.html">Le fishe swimming in a bathtub</a>
+        <a href="{{ base_url }}/topic.html">{{ topic.topic_name }}</a>
       </td>
-      <td>2</td>
-      <td>August 17th 2022 at 10.20 AM</td>
+      <td>{{ topic.num_messages }}</td>
+      <td>{{ topic.last_date }}</td>
     </tr>
+    {% endfor %}
   </table>
 {% endblock %}

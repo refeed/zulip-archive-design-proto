@@ -8,13 +8,16 @@
       <th># of messages</th>
       <th>Latest message date</th>
     </tr>
+
+    {% for stream in stream_list  %}
     <tr>
       <td>
-        <a href="{{ base_url }}/stream.html">lorem ipsum</a>
+        <a href="{{ stream.url }}">{{ stream.stream_name }}</a>
       </td>
-      <td>1</td>
-      <td>2</td>
-      <td>August 7th 2022 at 10.20 AM</td>
+      <td>{{ stream.num_topics }}</td>
+      <td>{{ stream.num_messages }}</td>
+      <td>{{ stream.last_date }}</td>
     </tr>
+    {% endfor %}
   </table>
 {% endblock %}

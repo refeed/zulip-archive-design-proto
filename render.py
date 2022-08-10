@@ -1,10 +1,9 @@
-import os
 import shutil
 
 from jinja2 import Environment, FileSystemLoader
 
-BASE_URL = os.getenv("BASE_URL", "")
-INSTANCE_TITLE = "Lorem Ipsum Community Archive"
+from fixtures import stream_list, topic_list, chat_list
+from config import BASE_URL, INSTANCE_TITLE
 
 environment = Environment(loader=FileSystemLoader("templates"), autoescape=True)
 stream_list_template = environment.get_template("stream_list.html.jinja2")
@@ -19,6 +18,7 @@ with open("./rendered/index.html", mode="w+", encoding="utf-8") as f:
             page_title=INSTANCE_TITLE,
             title=INSTANCE_TITLE,
             last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
+            stream_list=stream_list,
         )
     )
 with open("./rendered/stream.html", mode="w+", encoding="utf-8") as f:
@@ -28,6 +28,7 @@ with open("./rendered/stream.html", mode="w+", encoding="utf-8") as f:
             page_title=f"# lorem ipsum | {INSTANCE_TITLE}",
             title=INSTANCE_TITLE,
             last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
+            topic_list=topic_list,
         )
     )
 with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
@@ -37,6 +38,7 @@ with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
             page_title=f"Le fishe swimming in a bathtub - # lorem ipsum | {INSTANCE_TITLE}",
             title=INSTANCE_TITLE,
             last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
+            chat_list=chat_list,
         )
     )
 

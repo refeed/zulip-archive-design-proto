@@ -1,0 +1,94 @@
+code {
+    /* 11.55px when body is the default 14px; this is chosen to be
+       slightly above the 11.5px threshold where the height jumps by a
+       pixel on most platforms. */
+    font-size: 0.825em;
+    unicode-bidi: embed;
+    direction: ltr;
+    color: hsl(0, 0%, 0%);
+    white-space: pre;
+    border: 1px solid #e1e1e8;
+    border-radius: 3px;
+}
+
+.rendered_markdown code {
+    white-space: pre-wrap;
+    padding: 0 4px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.rendered_markdown p {
+  margin: 3px 0;
+}
+
+.rendered_markdown p + p {
+  margin-top: 10px;
+}
+
+.rendered_markdown ul, ol {
+  margin: 2px 0 5px 20px;
+}
+
+.rendered_markdown .user-group-mention, .user-mention {
+  border-radius: 3px;
+  padding: 0 0.2em;
+  box-shadow: 0 0 0 1px hsl(0, 0%, 80%);
+  margin-right: 2px;
+  margin-left: 2px;
+  white-space: nowrap;
+  background: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0.1) 0%,
+      hsla(0, 0%, 0%, 0) 100%
+  );
+  display: inline-block;
+  margin-bottom: 1px;
+}
+
+.rendered_markdown blockquote {
+  padding-left: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  border-left: 5px solid #eee;
+}
+
+.rendered_markdown a {
+  color: #0a95ff
+}
+
+.codehilite {
+    display: block !important;
+    border: none !important;
+    background: none !important;
+}
+
+pre {
+    direction: ltr;
+    /* code block text is a bit smaller than normal text */
+    font-size: 0.825em;
+    line-height: 1.4;
+    white-space: pre;
+    overflow-x: auto;
+    word-wrap: normal;
+    /* Bootstrap's default here is top: 0px, bottom: 10px */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* Bootstrap's default here is 9.5 on all sides */
+    padding: 5px 7px 3px;
+    border: 1px solid rgba(0,0,0,.15);
+    word-break: break-all;
+    border-radius: 4px;
+}
+
+.rendered_markdown pre code {
+    font-size: inherit;
+    padding: 0;
+    white-space: inherit;
+}
+
+pre code {
+    overflow-x: scroll;
+    white-space: pre;
+    border: 0;
+}
