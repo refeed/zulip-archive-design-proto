@@ -14,7 +14,9 @@
         <td>
           <a href="{{ stream.url }}">{{ stream.stream_name }}</a>
         </td>
-        <td><span class="rendered_markdown">{{ stream.rendered_description | safe }}</span></td>
+        <td>
+          <span class="rendered_markdown">{{ stream.rendered_description | safe }}</span>
+        </td>
         <td>{{ stream.num_topics }}</td>
         <td>{{ stream.num_messages }}</td>
         <td>{{ stream.last_date }}</td>
