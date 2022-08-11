@@ -8,6 +8,9 @@ stream_list.append(
         num_topics=1,
         num_messages=2,
         last_date="August 13th 2022 at 10.00 PM",
+        rendered_description="""
+For discussions of the <a href="/api/rest" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/rest">API</a>, <a href="/integrations" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/integrations">integrations</a>, and <a href="/api/running-bots" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/running-bots">bots</a> and&nbsp;in Zulip.
+""",
     )
 )
 stream_list.append(
@@ -17,6 +20,9 @@ stream_list.append(
         num_topics=1,
         num_messages=2,
         last_date="August 13th 2022 at 10.00 PM",
+        rendered_description="""
+For discussions of the <a href="/api/rest" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/rest">API</a>, <a href="/integrations" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/integrations">integrations</a>, and <a href="/api/running-bots" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/running-bots">bots</a> and&nbsp;in Zulip.
+""",
     )
 )
 stream_list.append(
@@ -26,6 +32,9 @@ stream_list.append(
         num_topics=1,
         num_messages=2,
         last_date="August 13th 2022 at 10.00 PM",
+        rendered_description="""
+For discussions of the <a href="/api/rest" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/rest">API</a>, <a href="/integrations" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/integrations">integrations</a>, and <a href="/api/running-bots" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/running-bots">bots</a> and&nbsp;in Zulip.
+""",
     )
 )
 

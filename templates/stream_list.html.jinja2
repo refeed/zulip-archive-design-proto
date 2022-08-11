@@ -4,6 +4,7 @@
   <table border="1">
     <tr>
       <th>Stream name</th>
+      <th>Description</th>
       <th># of topic</th>
       <th># of messages</th>
       <th>Latest message date</th>
@@ -13,6 +14,7 @@
         <td>
           <a href="{{ stream.url }}">{{ stream.stream_name }}</a>
         </td>
+        <td><span class="rendered_markdown">{{ stream.rendered_description | safe }}</span></td>
         <td>{{ stream.num_topics }}</td>
         <td>{{ stream.num_messages }}</td>
         <td>{{ stream.last_date }}</td>

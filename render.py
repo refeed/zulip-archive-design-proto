@@ -31,6 +31,9 @@ with open("./rendered/stream.html", mode="w+", encoding="utf-8") as f:
             topic_list=topic_list,
             stream_name="lorem ipsum",
             stream_url=f"{BASE_URL}/stream.html",
+            rendered_description="""
+For discussions of the <a href="/api/rest" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/rest">API</a>, <a href="/integrations" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/integrations">integrations</a>, and <a href="/api/running-bots" target="_blank" rel="noopener noreferrer" title="https://chat.zulip.org/api/running-bots">bots</a> and&nbsp;in Zulip.
+""",
         )
     )
 with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
