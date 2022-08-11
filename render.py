@@ -29,6 +29,8 @@ with open("./rendered/stream.html", mode="w+", encoding="utf-8") as f:
             title=INSTANCE_TITLE,
             last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
             topic_list=topic_list,
+            stream_name="lorem ipsum",
+            stream_url=f"{BASE_URL}/stream.html",
         )
     )
 with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
@@ -39,6 +41,10 @@ with open("./rendered/topic.html", mode="w+", encoding="utf-8") as f:
             title=INSTANCE_TITLE,
             last_updated_str="Archived on August 17th 2022 at 11.00 AM UTC",
             chat_list=chat_list,
+            stream_name="lorem ipsum",
+            stream_url=f"{BASE_URL}/stream.html",
+            topic_name="Le fishe swimming in a bathtub",
+            num_messages=3,
         )
     )
 
