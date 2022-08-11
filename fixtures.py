@@ -126,3 +126,25 @@ chat_list.append(
 """,
     )
 )
+chat_list.append(
+    dict(
+        zulip_link="#",
+        user_name="Rafid Aslam",
+        date="August 17th at 20.22",
+        msg_id=2,
+        msg_content_html="""
+<h1>Heading 1</h1>
+<p>hello</p>
+<h2>Heading 2</h2>
+<p>hello</p>
+<h3>Heading 3</h3>
+<p>hello</p>
+<h4>Heading 4</h4>
+<p>hello</p>
+<h5>Heading 5</h5>
+<p>hello</p>
+<h6>Heading 6</h6>
+<p>hello</p>
+""",
+    )
+)

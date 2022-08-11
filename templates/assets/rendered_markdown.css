@@ -1,20 +1,20 @@
 code {
-    /* 11.55px when body is the default 14px; this is chosen to be
+  /* 11.55px when body is the default 14px; this is chosen to be
        slightly above the 11.5px threshold where the height jumps by a
        pixel on most platforms. */
-    font-size: 0.825em;
-    unicode-bidi: embed;
-    direction: ltr;
-    color: hsl(0, 0%, 0%);
-    white-space: pre;
-    border: 1px solid #e1e1e8;
-    border-radius: 3px;
+  font-size: 0.825em;
+  unicode-bidi: embed;
+  direction: ltr;
+  color: hsl(0, 0%, 0%);
+  white-space: pre;
+  border: 1px solid #e1e1e8;
+  border-radius: 3px;
 }
 
 .rendered_markdown code {
-    white-space: pre-wrap;
-    padding: 0 4px;
-    background-color: hsl(0, 0%, 100%);
+  white-space: pre-wrap;
+  padding: 0 4px;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .rendered_markdown p {
@@ -25,11 +25,13 @@ code {
   margin-top: 10px;
 }
 
-.rendered_markdown ul, ol {
+.rendered_markdown ul,
+ol {
   margin: 2px 0 5px 20px;
 }
 
-.rendered_markdown .user-group-mention, .user-mention {
+.rendered_markdown .user-group-mention,
+.user-mention {
   border-radius: 3px;
   padding: 0 0.2em;
   box-shadow: 0 0 0 1px hsl(0, 0%, 80%);
@@ -37,9 +39,9 @@ code {
   margin-left: 2px;
   white-space: nowrap;
   background: linear-gradient(
-      to bottom,
-      hsla(0, 0%, 0%, 0.1) 0%,
-      hsla(0, 0%, 0%, 0) 100%
+    to bottom,
+    hsla(0, 0%, 0%, 0.1) 0%,
+    hsla(0, 0%, 0%, 0) 100%
   );
   display: inline-block;
   margin-bottom: 1px;
@@ -63,38 +65,88 @@ code {
   text-decoration: underline;
 }
 
+/* Headings */
+.rendered_markdown h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Headings: Ensure that messages that start with a heading don't have
+       a weirdly blank area at the very start of the message. */
+.rendered_markdown h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+/* We use a modest progression of heading sizes to make them stand out
+       from normal next but avoid taking up too much space. */
+.rendered_markdown h1 {
+  font-size: 1.4em;
+}
+
+.rendered_markdown h2 {
+  font-size: 1.3em;
+}
+
+.rendered_markdown h3 {
+  font-size: 1.2em;
+}
+
+.rendered_markdown h4 {
+  font-size: 1.1em;
+}
+
+.rendered_markdown h5 {
+  font-size: 1.05em;
+}
+
+.rendered_markdown h6 {
+  font-size: 1em;
+}
+
 .codehilite {
-    display: block !important;
-    border: none !important;
-    background: none !important;
+  display: block !important;
+  border: none !important;
+  background: none !important;
 }
 
 pre {
-    direction: ltr;
-    /* code block text is a bit smaller than normal text */
-    font-size: 0.825em;
-    line-height: 1.4;
-    white-space: pre;
-    overflow-x: auto;
-    word-wrap: normal;
-    /* Bootstrap's default here is top: 0px, bottom: 10px */
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /* Bootstrap's default here is 9.5 on all sides */
-    padding: 5px 7px 3px;
-    border: 1px solid rgba(0,0,0,.15);
-    word-break: break-all;
-    border-radius: 4px;
+  direction: ltr;
+  /* code block text is a bit smaller than normal text */
+  font-size: 0.825em;
+  line-height: 1.4;
+  white-space: pre;
+  overflow-x: auto;
+  word-wrap: normal;
+  /* Bootstrap's default here is top: 0px, bottom: 10px */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* Bootstrap's default here is 9.5 on all sides */
+  padding: 5px 7px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  word-break: break-all;
+  border-radius: 4px;
 }
 
 .rendered_markdown pre code {
-    font-size: inherit;
-    padding: 0;
-    white-space: inherit;
+  font-size: inherit;
+  padding: 0;
+  white-space: inherit;
 }
 
 pre code {
-    overflow-x: scroll;
-    white-space: pre;
-    border: 0;
+  overflow-x: scroll;
+  white-space: pre;
+  border: 0;
 }
