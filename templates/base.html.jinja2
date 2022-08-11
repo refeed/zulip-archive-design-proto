@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>{{ page_title }}</title>
+    <meta charset="utf-8">
+    <meta property="og:title" content="{{ page_title }}"/>
+    <meta property="og:description"
+          content="{{ meta_desc | default('Zulip multithreaded chat archive') }}"/>
+    <meta property="og:type" content="website"/>
     <link rel="stylesheet" href="https://use.typekit.net/fte6dua.css"/>
     <link rel="stylesheet" href="{{ base_url }}/assets/pygments.css"/>
     <link rel="stylesheet" href="{{ base_url }}/assets/style.css"/>
@@ -27,5 +32,6 @@
     <div class="content-wrapper">
       {% block content %}{% endblock %}
     </div>
+    {% block scripts %}{% endblock %}
   </body>
 </html>

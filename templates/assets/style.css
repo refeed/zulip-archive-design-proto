@@ -143,3 +143,12 @@ a.chat-permalink {
 a.view-in-zulip-link {
   color: #0a95ff;
 }
+
+.normalize {
+  /* Used to normalize style especially on headings like h1, etc */
+  margin: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  display: inline;
+  font-weight: inherit;
+}
