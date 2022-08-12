@@ -1,11 +1,9 @@
 {% extends "base.html.jinja2" %}
 {% block content %}
   <div class="page-info">
-    <div class="content-header-small-xlight">STREAM</div>
     <div class="content-header-light">
-      <a href="{{ stream_url }}">{{ stream_name }}</a>
+      <a href="{{ stream_url }}"># {{ stream_name }}</a>
     </div>
-    <div class="content-header-small-xlight">DESCRIPTION</div>
     <div class="rendered_markdown">{{ rendered_description | safe }}</div>
   </div>
   <table border="1">
